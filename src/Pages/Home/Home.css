@@ -1,0 +1,62 @@
+.poster1{
+   background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Download-Free-Sunset-Beaches-Wallpaper-1.jpg);
+   background-size:cover;
+background-repeat: no-repeat;
+height: 500px;
+width: 500px;
+margin-right: 10px;
+}
+.poster2{
+    background-image: url(https://i0.wp.com/ideawallpapers.com/wp-content/uploads/2021/12/coffee-pexels-photo-6.jpeg?fit=611%2C815&ssl=1); 
+    background-size:cover;
+  background-repeat: no-repeat;
+  height: 500px;
+width: 500px;
+
+}
+.poster3{
+    background-image:url(https://images.unsplash.com/photo-1493673272479-a20888bcee10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbnQlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&w=1000&q=80);
+    background-size: cover;
+background-repeat: no-repeat;
+height: 500px;
+width: 500px;
+margin-right: 10px;
+
+}
+.poster4{
+  background-image:url(https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+background-repeat: no-repeat;
+height: 500px;
+width: 500px;
+  
+}
+.posterGrid{
+  display: flex;
+ flex-direction:column;
+  justify-content: center;
+}
+.inside1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inside2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+.Caption{
+  color: rgba(251, 250, 246, 0.737);
+}
+.topCaption{
+
+font-size: 28px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.bottomCaption{
+  font-family:sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}

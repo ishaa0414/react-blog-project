@@ -1,0 +1,81 @@
+.BollywoodFlex{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.movieListFlex{
+display: flex;
+gap: 20px;
+}
+.MainImage{
+    height: 200px;
+    width: 250px;
+    border: 1px solid black;
+    -webkit-box-shadow: 2px 6px 17px -3px rgba(0,0,0,0.56);
+    -moz-box-shadow: 2px 6px 17px -3px rgba(0,0,0,0.56);
+    box-shadow: 2px 6px 17px -3px rgba(0,0,0,0.56);
+    
+}
+.TopImage{
+    height: 150px;
+    width: 150px;
+}
+.margin{
+    margin: 20px;
+}
+.topPostList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.bollywoodList{
+  margin: 20px;
+}
+.bigFlex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.topFlex{
+    display: flex;
+    flex-direction: column;
+}
+.Advertisement{
+    border: 1px solid black;
+    height: 500px;
+    width: 300px;
+    text-align: center;
+}
+.pageName{
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 5px 8px rgba(179,151,106,0.82);
+ color: rgb(66, 22, 6);
+ text-decoration: underline;
+ text-underline-offset:10px;
+}
+h3{
+    color:#042047;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.review{
+    color: rgb(75, 63, 5);
+    font-family: sans-serif;
+}
+.rating{
+    color: #1b1b01;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:768px) {
+    .bigFlex{
+        flex-direction: column;
+    }
+    .topFlex{
+        flex-direction: row;
+    }
+    .bollywoodList{
+        margin: 2px;
+    }
+}
