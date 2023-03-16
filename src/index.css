@@ -1,0 +1,9 @@
+html,body{
+    height: 100%;
+}
+body{
+    background: rgb(255,255,252);
+background: radial-gradient(circle, rgba(255,255,252,1) 0%, rgba(255,254,252,1) 13%, rgba(227,222,220,1) 72%, rgba(223,217,215,1) 79%, rgba(220,213,211,1) 100%, rgba(117,90,82,1) 100%, rgba(167,203,198,1) 100%, rgba(255,255,255,1) 100%);
+
+background-size: cover;
+}

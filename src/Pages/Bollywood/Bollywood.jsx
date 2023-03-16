@@ -2,9 +2,14 @@ import React, { useContext } from 'react'
 import { DataContext } from '../../Context'
 import Header from '../../Header/Header'
 import './Bollywood.css'
+import { useNavigate } from 'react-router-dom'
 
 export default function Bollywood() {
   const [bollywood]=useContext(DataContext);
+  const nav=useNavigate();
+  const toNavigate=(id,selectedMovie)=>{
+    nav(`/article/$(id)`,{state:{content:selectedMovie}});
+  }
   return (
     <>
     <Header />
@@ -15,7 +20,7 @@ export default function Bollywood() {
       bollywood.filter((item)=>item.category === 'bollywood').map((movie)=>{
         return(
           <>
-          <div className='BollywoodFlex' id={movie.id}>
+          <div className='BollywoodFlex' id={movie.id} onClick={()=>toNavigate(movie.id,movie)}>
           <div className='bollywoodList'>
             <div className='movieListFlex'>
             <img src={movie.imgUrl} alt="jabWeMet" className='image'/>
@@ -43,7 +48,7 @@ export default function Bollywood() {
       bollywood.filter((item)=>item.category === 'bollywood').map((movie)=>{
         return(
           <>
-          <div className='topPostList'>
+          <div className='topPostList'onClick={()=>toNavigate(movie.id,movie)}>
             <div>
           <img src={movie.imgUrl} alt='moviePoster' className='image2'/>
           </div>

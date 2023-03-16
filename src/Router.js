@@ -5,6 +5,7 @@ import Food from "./Pages/Food/Food"
 import Hollywood from "./Pages/Hollywood/Hollywood"
 import Home from "./Pages/Home/Home"
 import Books from "./Pages/Books/Books"
+import Articlepage from "./Pages/Article/Article"
 
 const RouterComponent=()=>{
     return(
@@ -16,6 +17,7 @@ const RouterComponent=()=>{
             <Route path="/hollywood" element={<Hollywood/>}/>
             <Route path="/gardening" element={<Gardening/>}/>
             <Route path="/food" element={<Food/>}/>
+            <Route path="/article/:id" element={<Articlepage/>}/>
         </Routes>
         
     )

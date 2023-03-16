@@ -3,8 +3,15 @@ import Header from '../../Header/Header'
 import React, { useContext } from 'react'
 import { DataContext } from '../../Context'
 import './Food.css'
+import { useNavigate } from 'react-router-dom'
+
 export default function Food() {
   const [food]=useContext(DataContext);
+
+  const nav=useNavigate();
+  const toNavigate=(id,selectedFood)=>{
+    nav(`/article/$(id)`,{state:{content:selectedFood}});
+  }
   return (
     <>
  
@@ -18,7 +25,7 @@ export default function Food() {
       food.filter((item)=>item.category === 'food').map((food)=>{
         return(
           <>
-          <div className='BollywoodFlex' id={food.id}>
+          <div className='BollywoodFlex' id={food.id}  onClick={()=>toNavigate(food.id,food)}>
           <div className='bollywoodList'>
             <div className='movieListFlex'>
             <img src={food.imgUrl} alt="Foods" className='image1'/>
@@ -46,11 +53,11 @@ export default function Food() {
       food.filter((item)=>item.category === 'food').map((food)=>{
         return(
           <>
-          <div className='topPostLists'>
+          <div className='topPostLists'  onClick={()=>toNavigate(food.id,food)}>
             <div>
           <img src={food.imgUrl} alt='moviePoster' className='imageSide'/>
           </div>
-          <div>
+          <div >
           <div className='fontSize2'>{food.name}</div>
           <div className='fontSize'>{food.rating}</div>
           <div className='fontSize'>{food.date}</div>

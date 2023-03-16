@@ -51,7 +51,6 @@ width: 500px;
   color: rgba(251, 250, 246, 0.737);
 }
 .topCaption{
-
 font-size: 28px;
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -59,4 +58,60 @@ font-family: Arial, Helvetica, sans-serif;
   font-family:sans-serif;
   font-size: 15px;
   font-weight: bold;
+}
+.latestFlex1{
+  display: flex;
+  flex-wrap:nowrap;
+}
+.gardenImage{
+  height: 100px;
+  width: 200px;
+}
+.reviewWidth{
+  width: 200px;
+}
+.LatestPost2{
+  display: flex;
+}
+.latestBollywood{
+  display: flex;
+ flex-direction: column;
+}
+.latestAdvertisement{
+  border: 1px solid black;
+  height: 500px;
+  width: 300px;
+}
+.latestBollywoodContent{
+  display: flex;
+
+}
+.FoodImage{
+  height: 150px;
+  width: 200px;
+}
+.latestPost3{
+  display: flex;
+}
+.bookImage{
+  height: 150px;
+  width: 200px;
+}
+.bottomPoster{
+  background: url(https://c8.alamy.com/comp/CWKGDG/iconic-hollywood-movie-posters-on-wall-CWKGDG.jpg);
+  height: 800px;
+  width: 350px;
+}
+.latestPost4{
+  display: flex;
+}
+.moviehImage{
+  height: 200px;
+  width: 150px;
+}
+.latestPost5{
+  display: flex;
+}
+html,body{
+  height: 100%;
 }

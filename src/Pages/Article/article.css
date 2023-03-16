@@ -1,0 +1,30 @@
+.articleimg{
+    height: 500px;
+    width: 500px;
+}
+.profileImg{
+   height: 50px;
+   width: 50px;
+}
+.articleFlex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.profileName{
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(65, 64, 64);
+}
+.profileDate{
+    font-size: 10px;
+    color: grey;
+}
+.articleContent{
+    width: 800px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 17px;
+}

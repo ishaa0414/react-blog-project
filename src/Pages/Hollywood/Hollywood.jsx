@@ -2,8 +2,13 @@ import "./Hollywood.css"
 import React, { useContext } from 'react'
 import { DataContext } from '../../Context'
 import Header from '../../Header/Header'
+import { useNavigate } from "react-router-dom"
 export default function Hollywood() {
   const [hollywood]=useContext(DataContext);
+  const nav=useNavigate();
+  const toNavigate=(id,selectedMovieh)=>{
+    nav(`/article/$(id)`,{state:{content:selectedMovieh}});
+  }
   return (
     <>
     <Header />
@@ -14,7 +19,7 @@ export default function Hollywood() {
       hollywood.filter((item)=>item.category === 'hollywood').map((movieh)=>{
         return(
           <>
-          <div className='BollywoodFlex' id={movieh.id}>
+          <div className='BollywoodFlex' id={movieh.id} onClick={()=>toNavigate(movieh.id,movieh)}>
           <div className='bollywoodList'>
             <div className='movieListFlex'>
             <img src={movieh.imgUrl} alt="jabWeMet" className='image'/>
@@ -42,7 +47,7 @@ export default function Hollywood() {
       hollywood.filter((item)=>item.category === 'hollywood').map((movieh)=>{
         return(
           <>
-          <div className='topPostList'>
+          <div className='topPostList' onClick={()=>toNavigate(movieh.id,movieh)}>
             <div>
           <img src={movieh.imgUrl} alt='moviePoster' className='image2'/>
           </div>

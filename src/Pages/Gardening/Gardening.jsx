@@ -2,9 +2,13 @@ import React, { useContext } from 'react'
 import { DataContext } from '../../Context'
 import Header from '../../Header/Header'
 import './Gardening.css'
-
+import { useNavigate } from 'react-router-dom'
 export default function Gardening() {
   const [gardening]=useContext(DataContext);
+  const nav=useNavigate();
+  const toNavigate=(id,selectedGarden)=>{
+    nav(`/article/$(id)`,{state:{content:selectedGarden}});
+  }
   return (
     <>
     <Header />
@@ -15,7 +19,7 @@ export default function Gardening() {
       gardening.filter((item)=>item.category === 'gardening').map((gardening)=>{
         return(
           <>
-          <div className='BollywoodFlex' id={gardening.id}>
+          <div className='BollywoodFlex' id={gardening.id}  onClick={()=>toNavigate(gardening.id,gardening)}>
           <div className='bollywoodList'>
             <div className='movieListFlex'>
             <img src={gardening.imgUrl} alt="Plant" className='MainImage'/>
@@ -43,7 +47,7 @@ export default function Gardening() {
       gardening.filter((item)=>item.category === 'gardening').map((gardening)=>{
         return(
           <>
-          <div className='topPostList'>
+          <div className='topPostList'  onClick={()=>toNavigate(gardening.id,gardening)}>
             <div>
           <img src={gardening.imgUrl} alt='Plant' className='TopImage'/>
           </div>

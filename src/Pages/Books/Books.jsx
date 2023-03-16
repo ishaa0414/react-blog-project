@@ -2,9 +2,13 @@ import React, { useContext } from 'react'
 import { DataContext } from '../../Context'
 import Header from '../../Header/Header'
 import './Books.css'
-
+import { useNavigate } from 'react-router-dom'
 export default function Books() {
   const [books]=useContext(DataContext);
+  const nav=useNavigate();
+  const toNavigate=(id,selectedBook)=>{
+    nav(`/article/$(id)`,{state:{content:selectedBook}});
+  }
   return (
     <>
     <Header />
@@ -15,7 +19,7 @@ export default function Books() {
       books.filter((item)=>item.category === 'books').map((books)=>{
         return(
           <>
-          <div className='BollywoodFlex' id={books.id}>
+          <div className='BollywoodFlex' id={books.id} onClick={()=>toNavigate(books.id,books)}>
           <div className='bollywoodList'>
             <div className='movieListFlex'>
             <img src={books.imgUrl} alt="jabWeMet" className='image'/>
@@ -43,7 +47,7 @@ export default function Books() {
      books.filter((item)=>item.category === 'books').map((books)=>{
         return(
           <>
-          <div className='topPostList'>
+          <div className='topPostList' onClick={()=>toNavigate(books.id,books)}>
             <div>
           <img src={books.imgUrl} alt='moviePoster' className='image2'/>
           </div>
