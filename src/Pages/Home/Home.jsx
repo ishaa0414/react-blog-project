@@ -3,11 +3,15 @@ import Header from '../../Header/Header'
 import './Home.css'
 import React, { useContext } from 'react'
 import { DataContext } from '../../Context'
-
+import { useNavigate } from 'react-router-dom'
 
 
 export default function Home() {
   const [latest]=useContext(DataContext);
+  const nav=useNavigate();
+  const toNavigate=(id,selectedMovie)=>{
+    nav(`/article/$(id)`,{state:{content:selectedMovie}});
+  }
   return (
     <>
     <div className='background'>
@@ -43,19 +47,20 @@ export default function Home() {
     </div>
     </div>
     </div>
+    <hr/>
     <div className='latestPost1'>
-      <h1>The Latest</h1>
+      <h1 className='latestHeading'>The Latest</h1>
       <div className='latestFlex1'>
       {
-      latest.filter((item)=>item.category === 'gardening' ).map((garden)=>{
+      latest.filter((item)=>item.category === 'gardening' && item.id< 27).map((garden)=>{
         return(
           <>
-        <div >
+        <div className='Border1'id={garden.id} onClick={()=>toNavigate(garden.id,garden)}>
          
            <img className='gardenImage' src={garden.imgUrl} alt='garden_latest'/>
-           <h4>{garden.name}</h4>
-           <div className='reviewWidth'>{garden.review}</div>
-           <div><span>Garden</span><span>March 05 2023</span></div>
+           <h4 className='heading'>{garden.name}</h4>
+          
+           <div className='contentFoot'><span>Garden|</span><span>March 05 2023</span></div>
            </div>
             
           </>
@@ -64,18 +69,20 @@ export default function Home() {
       })
     }
     </div> 
+    <hr/>
+    <h2 className='latestHeading'>LATEST WATCH</h2>
     <div className='LatestPost2'>
 <div className='latestBollywood'>
 {
-      latest.filter((item)=>item.category === 'bollywood').map((movie)=>{
+      latest.filter((item)=>item.category === 'bollywood'&& item.id<4).map((movie)=>{
         return(
           <>
-        <div className='latestBollywoodContent'>
+        <div className='border2'id={movie.id} onClick={()=>toNavigate(movie.id,movie)}>
          
-           <div><img className='gardenImage' src={movie.imgUrl} alt='garden_latest'/></div>
-           <div><h4>{movie.name}</h4>
-           <div className='reviewWidth'>{movie.review}</div>
-           <div><span>Movie</span><span>March 05 2023</span></div></div>
+           <div><img className='latest2Image' src={movie.imgUrl} alt='garden_latest'/></div>
+           <div><h4 className='heading'>{movie.name}</h4>
+           <div className='review'>{movie.review}</div>
+        <div className='contentFoot'><span>Movie|</span><span>March 05 2023</span></div></div>
            </div>
             
           </>
@@ -84,23 +91,25 @@ export default function Home() {
       })
     }
 </div>
+
+
 <div className='latestAdvertisement'></div>
     </div>
 
     </div>
     </div>
-    
+    <hr/>
+    <h2 className='latestHeading'>LATEST EATERIES</h2>
     <div className='latestPost3'>
 {
-      latest.filter((item)=>item.category === 'food').map((food)=>{
+      latest.filter((item)=>item.category === 'food' && item.id<11).map((food)=>{
         return(
           <>
-        <div className='latestFoodContent'>
+        <div  className='Border1'id={food.id} onClick={()=>toNavigate(food.id,food)}>
          
            <div><img className='FoodImage' src={food.imgUrl} alt='food_latest'/></div>
-           <div><h4>{food.name}</h4>
-           <div className='reviewWidth'>{food.review}</div>
-           <div><span>Food</span><span>March 05 2023</span></div></div>
+           <div><h4  className='heading'>{food.name}</h4>
+           <div className='contentFoot'><span>Food|</span><span>March 05 2023</span></div></div>
            </div>
             
           </>
@@ -109,6 +118,9 @@ export default function Home() {
       })
     }
 </div>
+
+<hr/>
+<h2 className='latestHeading'>LATEST READS</h2>
 <div className='latestPost4'>
 <div className='bottomPoster'></div>
 <div className='Top_Posts'>
@@ -116,12 +128,12 @@ export default function Home() {
       latest.filter((item)=>item.category === 'books' && item.id<22).map((books)=>{
         return(
           <>
-        <div className='latestbooksContent'>
+        <div className='border2'id={books.id} onClick={()=>toNavigate(books.id,books)}>
          
-           <div><img className='bookImage' src={books.imgUrl} alt='book_latest'/></div>
-           <div><h4>{books.name}</h4>
-           <div className='reviewWidth'>{books.review}</div>
-           <div><span>Book</span><span>March 05 2023</span></div></div>
+           <div><img className='latest2Image' src={books.imgUrl} alt='book_latest'/></div>
+           <div><h4 className='heading'>{books.name}</h4>
+           <div className='review'>{books.review}</div>
+           <div className='contentFoot'><span>Book|</span><span>March 05 2023</span></div></div>
            </div>
             
           </>
@@ -130,17 +142,20 @@ export default function Home() {
       })
     }
 </div>
+
 </div>
-<div className='latestPost5'>
+<hr/>
+<h2 className='latestHeading'>LATEST WATCH</h2>
+<div className='latestPost3'>
 {
-      latest.filter((item)=>item.category === 'hollywood' && item.id<22).map((movieh)=>{
+      latest.filter((item)=>item.category === 'hollywood' && item.id<16).map((movieh)=>{
         return(
           <>
-        <div className='latesthollywooodContent'>
+        <div className='Border1'id={movieh.id} onClick={()=>toNavigate(movieh.id,movieh)}>
          
-           <div><img className='moviehImage' src={movieh.imgUrl} alt='movieh_latest'/></div>
-           <div><h4>{movieh.name}</h4>
-           <div className='reviewWidth'>{movieh.review}</div>
+           <div><img className='FoodImage' src={movieh.imgUrl} alt='movieh_latest'/></div>
+           <div><h4 className='heading'>{movieh.name}</h4>
+         
            <div><span>Movie</span><span>March 05 2023</span></div></div>
            </div>
             
@@ -152,6 +167,7 @@ export default function Home() {
 
 </div>
 </div>
+<hr/>
     </>
   )
 }

@@ -1,13 +1,17 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation} from 'react-router-dom'
 import './article.css'
-import Header from '../../Header/Header';
+import Header from '../../Header/Header'
+import ArticleFooter from '../ArticleFooter/ArticleFooter';
 export default function Articlepage() {
     const Location=useLocation();
-
+   
+  
   return (
+  
 <>
 <Header/>
+
 <div className='articleFlex'>
     <div>
     <img className='articleimg' src={Location?.state?.content?.imgUrl} alt="article_img"/><br/>
@@ -16,6 +20,10 @@ export default function Articlepage() {
     </div>
     <div className='articleContent'>{Location?.state?.content?.article}</div>
 </div>
+<hr/>
+<h2 className='More'>More From LIVE LOVE LAUGH</h2>
+
+<ArticleFooter/>
 </>
   )
 }

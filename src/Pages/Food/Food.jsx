@@ -69,8 +69,8 @@ export default function Food() {
       })
     }
     </div>
-    <div className='AdvertisementFood'>
-      Advertisement
+    <div className='Advertisementbf'>
+    
     </div>
     </div>
       </div>

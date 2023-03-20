@@ -44,17 +44,17 @@ export default function Hollywood() {
      <div className='topFlex'>
       <div>
       {
-      hollywood.filter((item)=>item.category === 'hollywood').map((movieh)=>{
+      hollywood.filter((item)=>item.category === 'hollywood' && item.id<17).map((movieh)=>{
         return(
           <>
-          <div className='topPostList' onClick={()=>toNavigate(movieh.id,movieh)}>
+          <div className='topPostListb' onClick={()=>toNavigate(movieh.id,movieh)}>
             <div>
-          <img src={movieh.imgUrl} alt='moviePoster' className='image2'/>
+          <img src={movieh.imgUrl} alt='moviePoster' className='image2b'/>
           </div>
           <div>
-          <h5>{movieh.name}</h5>
-          <div>{movieh.rating}</div>
-          <div>{movieh.date}</div>
+          <h5 className="topimghead">{movieh.name}</h5>
+          <div className="rateb">{movieh.rating}</div>
+          <div className="dateb">{movieh.date}</div>
           <hr/>
           </div>
           </div>
@@ -63,8 +63,8 @@ export default function Hollywood() {
       })
     }
     </div>
-    <div className='Advertisement'>
-      Advertisement
+    <div className='Advertisementbh'>
+ 
     </div>
     </div>
       </div>

@@ -23,8 +23,14 @@
     color: grey;
 }
 .articleContent{
-    width: 800px;
+    width: 1000px;
     font-family: sans-serif;
     text-align: center;
     font-size: 17px;
+}
+.More{
+    font-family: sans-serif;
+    margin-left: 3%;
+    text-decoration: underline;
+    color: rgb(14, 37, 80);
 }

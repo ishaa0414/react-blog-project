@@ -5,6 +5,7 @@ background-repeat: no-repeat;
 height: 500px;
 width: 500px;
 margin-right: 10px;
+border-radius: 5px;
 }
 .poster2{
     background-image: url(https://i0.wp.com/ideawallpapers.com/wp-content/uploads/2021/12/coffee-pexels-photo-6.jpeg?fit=611%2C815&ssl=1); 
@@ -12,6 +13,7 @@ margin-right: 10px;
   background-repeat: no-repeat;
   height: 500px;
 width: 500px;
+border-radius: 5px;
 
 }
 .poster3{
@@ -21,6 +23,7 @@ background-repeat: no-repeat;
 height: 500px;
 width: 500px;
 margin-right: 10px;
+border-radius: 5px;
 
 }
 .poster4{
@@ -29,6 +32,7 @@ margin-right: 10px;
 background-repeat: no-repeat;
 height: 500px;
 width: 500px;
+border-radius: 5px;
   
 }
 .posterGrid{
@@ -62,29 +66,41 @@ font-family: Arial, Helvetica, sans-serif;
 .latestFlex1{
   display: flex;
   flex-wrap:nowrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 10px;
+  margin: 5%;
 }
 .gardenImage{
-  height: 100px;
-  width: 200px;
+  height: 130px;
+  width: 250px;
+  border-radius: 5px;
 }
 .reviewWidth{
   width: 200px;
 }
 .LatestPost2{
   display: flex;
+  justify-content:space-around;
 }
 .latestBollywood{
   display: flex;
  flex-direction: column;
+
+
 }
 .latestAdvertisement{
   border: 1px solid black;
-  height: 500px;
-  width: 300px;
+  height: 1200px;
+  width: 250px;
+  background:url(https://www.shutterstock.com/shutterstock/photos/531750643/display_1500/stock-vector-christmas-sale-vertical-advertising-banner-531750643.jpg);
+  background-size: contain;
+  background-repeat:repeat;
+  border-radius: 10px;
 }
 .latestBollywoodContent{
   display: flex;
-
+  flex-direction: column;
 }
 .FoodImage{
   height: 150px;
@@ -92,18 +108,22 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .latestPost3{
   display: flex;
+  justify-content: space-around;
+  padding: 30px;
 }
 .bookImage{
   height: 150px;
   width: 200px;
 }
 .bottomPoster{
-  background: url(https://c8.alamy.com/comp/CWKGDG/iconic-hollywood-movie-posters-on-wall-CWKGDG.jpg);
-  height: 800px;
+  background: url(https://img.freepik.com/premium-psd/give-away-contest-banner-social-media-post-template_368797-942.jpg);
+  height: 1500px;
   width: 350px;
+  background-size: contain;
 }
 .latestPost4{
   display: flex;
+  justify-content: space-around;
 }
 .moviehImage{
   height: 200px;
@@ -114,4 +134,62 @@ font-family: Arial, Helvetica, sans-serif;
 }
 html,body{
   height: 100%;
+}
+.heading{
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(44, 73, 74);
+}
+.Border1{
+border: 1px solid rgb(211, 196, 196);
+background: rgb(255,255,252);
+background: radial-gradient(circle, rgba(255,255,252,1) 8%, rgba(231,229,228,1) 41%, rgba(226,224,224,1) 68%, rgba(241,230,226,1) 100%, rgba(255,254,252,1) 100%, rgba(255,255,255,1) 100%, rgba(220,213,211,1) 100%, rgba(167,203,198,1) 100%, rgba(167,203,198,1) 121%);
+border-radius: 5px;
+padding: 50px;
+-webkit-box-shadow: -2px 5px 23px -5px rgba(0,0,0,0.45);
+-moz-box-shadow: -2px 5px 23px -5px rgba(0,0,0,0.45);
+box-shadow: -2px 5px 23px -5px rgba(0,0,0,0.45);
+}
+.latestHeading{
+  color: rgb(83, 40, 9);
+  text-decoration: underline;
+  margin: 5%;
+}
+.latest2Image{
+  height: 280px;
+  width: 250px;
+  margin-right: 10px;
+}
+.border2{
+  border: 1px solid rgb(211, 196, 196);
+padding: 30px;
+margin-bottom: 5%;
+-webkit-box-shadow: -2px 5px 23px -5px rgba(0,0,0,0.45);
+-moz-box-shadow: -2px 5px 23px -5px rgba(0,0,0,0.45);
+box-shadow: -2px 5px 23px -5px rgba(0,0,0,0.45);
+background: radial-gradient(circle, rgba(255,255,252,1) 8%, rgba(231,229,228,1) 41%, rgba(226,224,224,1) 68%, rgba(241,230,226,1) 100%, rgba(255,254,252,1) 100%, rgba(255,255,255,1) 100%, rgba(220,213,211,1) 100%, rgba(167,203,198,1) 100%, rgba(167,203,198,1) 121%);
+border-radius: 5px;
+display: flex;
+width: 700px;
+}
+.reel{
+  background: url(https://media.istockphoto.com/id/1223502781/vector/video-camera-gold-icon-vector-illustration-of-golden-particle-background.jpg?s=612x612&w=0&k=20&c=mw0Xkcq5-iLPG-rvqs1w-TNtcWl3xd8WoDys0ZuHYKk=);
+  height: 1100px;
+  width: 50px;
+  background-repeat: repeat;
+  background-size:10em;
+  -webkit-box-shadow: -2px 5px 23px -5px rgba(0,0,0,0.45);
+-moz-box-shadow: -2px 5px 23px -5px rgba(0,0,0,0.45);
+box-shadow: -2px 5px 23px -5px rgba(0,0,0,0.45);
+border: 1px solid rgb(215, 182, 117);
+padding: 50px;
+border-radius: 4px;
+filter: opacity(60%);
+}
+.contentFoot{
+  margin-top:30px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(101, 98, 64);
+  font-size: 13px;
 }

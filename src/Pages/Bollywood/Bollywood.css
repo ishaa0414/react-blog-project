@@ -17,18 +17,18 @@ gap: 20px;
     box-shadow: 2px 6px 17px -3px rgba(0,0,0,0.56);
     
 }
-.image2{
-    height: 200px;
-    width: 150px;
+.image2b{
+    height: 90px;
+    width: 60px;
 }
 .margin{
     margin: 20px;
 }
-.topPostList{
+.topPostListb{
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    text-align: center;
+    text-align: right;
     cursor: pointer;
 }
 .bollywoodList{
@@ -42,11 +42,11 @@ gap: 20px;
     display: flex;
     flex-direction: column;
 }
-.Advertisement{
-    border: 1px solid black;
-    height: 500px;
-    width: 300px;
-    text-align: center;
+.Advertisementb{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREB_yx2efmISGuSwVLCw1iFZUGMbghtmVB09IV6qIiSCBaTDvh-Q7XU5PUJhlnBHk0FYU&usqp=CAU);
+  width: 200px;
+  height: 1300px;
+  background-size: contain;
 }
 .pageName{
     font-family: Arial, Helvetica, sans-serif;
@@ -68,8 +68,15 @@ h3{
     font-weight: bold;
     font-size: 15px;
 }
-
-
+.rateb{
+    font-size: 12px;
+}
+.dateb{
+    font-size: 9px;
+}
+.topimghead{
+    text-align: right;
+}
 @media screen and (max-width:768px) {
     .bigFlex{
         flex-direction: column;

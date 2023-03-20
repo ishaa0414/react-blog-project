@@ -1,0 +1,20 @@
+.flex{
+    display: flex;
+    justify-content:space-around;
+}
+.internalFlex{
+    display: flex;
+}
+.imageA{
+    height: 130px;
+    width: 150px;
+}
+.hA{
+    font-size:10px;
+}
+.ratinga{
+    font-size: 8px;
+}
+.internalFlex{
+    width: 200px;
+}

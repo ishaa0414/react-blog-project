@@ -44,17 +44,17 @@ export default function Books() {
      <div className='topFlex'>
       <div>
       {
-     books.filter((item)=>item.category === 'books').map((books)=>{
+     books.filter((item)=>item.category === 'books' && item.id<21).map((books)=>{
         return(
           <>
-          <div className='topPostList' onClick={()=>toNavigate(books.id,books)}>
+          <div className='topPostListb' onClick={()=>toNavigate(books.id,books)}>
             <div>
-          <img src={books.imgUrl} alt='moviePoster' className='image2'/>
+          <img src={books.imgUrl} alt='moviePoster' className='image2b'/>
           </div>
           <div>
-          <h5>{books.name}</h5>
-          <div>{books.rating}</div>
-          <div>{books.date}</div>
+          <h5 className='topimghead'>{books.name}</h5>
+          <div className='rateb'>{books.rating}</div>
+          <div className='dateb'>{books.date}</div>
           <hr/>
           </div>
           </div>
@@ -63,8 +63,8 @@ export default function Books() {
       })
     }
     </div>
-    <div className='Advertisement'>
-      Advertisement
+    <div className='Advertisementbook'>
+     
     </div>
     </div>
       </div>

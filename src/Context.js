@@ -33,19 +33,10 @@ function DataContextProvider(props){
       date:"5th March 2023",
       article:"Kal Ho Naa Ho film eventually grossed over Rs 600 million worldwide, becoming the top grossing Bollywood Film Worldwide, second top-grossing movie in India, as well as the top-grossing Bollywood film in the overseas market that year. Naina is an Indian girl who lives with her father, mother and grandmother in India. Unable to handle the constant bickering between his mother and his wife, he kills himself. Naina resigns herself to a live a life amidst the constant arguments. She hopes to eventually wed Rohit, and live with him, despite his failings.Then Aman moves in next door, and both fall in love with each other. Naina would like to get married to him, but he would like Naina to get married to Rohit. Naina must now find out why Aman is refusing to marry her, and if at all, there is another woman in his life"
     },
+   
     {
         category:"bollywood",
         id:4,
-       imgUrl:"https://m.media-amazon.com/images/M/MV5BZGFmMjM5OWMtZTRiNC00ODhlLThlYTItYTcyZDMyYmMyYjFjXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
-       name:"ZINDAGI NA MILEGI DOBARA" ,
-       review:"Three friends decide to turn their fantasy vacation into reality after one of their friends gets engaged.Zindagi Na Milegi Dobara (You Only Live Once), also abbreviated as ZNMD, is a 2011 Indian Hindi-language buddy road comedy drama film directed by Zoya Akhtar and produced by Farhan Akhtar and Ritesh Sidhwani under Excel Entertainment. ",
-       rating:"IMDb rating:8.2/10",
-      date:"5th March 2023",
-      article:"Zindagi Na Milegi Dobara movie is about male bonding and things and situations that challenge friendship.The story revolves around 3 young men take a  holiday that changes their lives forever.Kabir (Abhay Deol) has just met Natasha. 6 months later they are engaged. He wants to go on an extended bachelor party. A 3 week road trip with Imraan (Farhan Akhtar) and Arjun (Hrithik Roshan)- his 2 best friends since school. The only problem is Arjun is too tied up with work. After much emotional blackmail and cajoling the boys set off on a journey they were meant to take 4 years ago. A fantasy holiday they had planned to take after college but never happened. A road trip where each one gets to do the ultimate sport of his choice and the other 2 just have to do it with him. Whether they want to or not Kabir Imraan and Arjun meet up in Barcelona and set off on an adventure that will not only make them iron out their differences but also face their fears, after their perception, unravel their fabric, force them to break out of the box and teach them to seize the day.In other words a holiday that will change their lives forever."
-    },
-    {
-        category:"bollywood",
-        id:5,
        imgUrl:"https://m.media-amazon.com/images/M/MV5BMjRjMTYwMTYtMmRkNi00MmVkLWE0MjQtNmM3YjI0NWFhZDNmXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
        name:"DIL CHAHTA HAI" ,
        review:"Three inseparable childhood friends are just out of college. Nothing comes between them - until they each fall in love, and their wildly different approaches to relationships creates tension.",
@@ -55,13 +46,23 @@ function DataContextProvider(props){
     },
     {
         category:"bollywood",
-        id:6,
+        id:5,
        imgUrl:"https://m.media-amazon.com/images/M/MV5BMDc1ZDBkODMtYjI0MC00NDcyLWFhMGUtYzM4NDQyMzgyYzg1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
        name:"WAKE UP SID" ,
        review:"The story of a lazy Mumbai college student who does absolutely nothing, with a turn of events will Sid realize his potential in this world and become a success in the fast-paced life of Mumbai.",
        rating:"IMDb rating:7.6/10",
       date:"5th March 2023",
       article:"Wake Up Sid movie is Mumbai-based romance about urban relationships and revolves around a good looking young guy (Ranbir Kapoor) who falls for an older and simple woman (Konkona Sen Sharma), a writer from Kolkata.The film starts with the story of Sidharth Mehra (Ranbir Kapoor), a lazy, unmotivated slacker from Mumbai whose life undergoes a series of changes after taking his final year college exams. Sid's world is breezy, carefree, and without any true responsibilities. The most important elements in his life are his friends, his camera, his car, and his X-box 360.Sid thrives around his two best friends, Rishi (Namit Das) and Laxmi (Shikha Talsania), very rarely communicates with his mother Sarita (Supriya Pathak) and takes his father Ram Mehra (Anupam Kher), and all his hard earned wealth for granted. Despite all these traits, Sid is an honest boy; sweet, funny, and above all, a good friend. Aisha Bannerjee (Konkona Sen Sharma), an aspiring writer from Calcutta, learns this soon enough when her path crosses with Sid's on her first day in Bombay, Ambitious, well-read, and driven, Aisha has come to Bombay to realize her dreams as a writer. Despite their contrasting personalities. Sid becomes Aisha's first friend in the city.As Aisha sets up her life in Bombay, with the help of Sid and his gang, Sid allows for time to fly by over long drives, parties that stretch well into dawn, and endless hours doing absolutely nothing. But summers vary rarely dull these days and Sid's summer is no different. A series of circumstances and events compel him to take stock of his life and take a hard look at himself. Will he, at some point figure out what he's supposed to be doing with his life?"
+    },
+    {
+        category:"bollywood",
+        id:6,
+       imgUrl:"https://m.media-amazon.com/images/M/MV5BZGFmMjM5OWMtZTRiNC00ODhlLThlYTItYTcyZDMyYmMyYjFjXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
+       name:"ZINDAGI NA MILEGI DOBARA" ,
+       review:"Three friends decide to turn their fantasy vacation into reality after one of their friends gets engaged.Zindagi Na Milegi Dobara (You Only Live Once), also abbreviated as ZNMD, is a 2011 Indian Hindi-language buddy road comedy drama film directed by Zoya Akhtar and produced by Farhan Akhtar and Ritesh Sidhwani under Excel Entertainment. ",
+       rating:"IMDb rating:8.2/10",
+      date:"5th March 2023",
+      article:"Zindagi Na Milegi Dobara movie is about male bonding and things and situations that challenge friendship.The story revolves around 3 young men take a  holiday that changes their lives forever.Kabir (Abhay Deol) has just met Natasha. 6 months later they are engaged. He wants to go on an extended bachelor party. A 3 week road trip with Imraan (Farhan Akhtar) and Arjun (Hrithik Roshan)- his 2 best friends since school. The only problem is Arjun is too tied up with work. After much emotional blackmail and cajoling the boys set off on a journey they were meant to take 4 years ago. A fantasy holiday they had planned to take after college but never happened. A road trip where each one gets to do the ultimate sport of his choice and the other 2 just have to do it with him. Whether they want to or not Kabir Imraan and Arjun meet up in Barcelona and set off on an adventure that will not only make them iron out their differences but also face their fears, after their perception, unravel their fabric, force them to break out of the box and teach them to seize the day.In other words a holiday that will change their lives forever."
     },
 {
     category:"food",
@@ -164,23 +165,24 @@ function DataContextProvider(props){
 
     category:"hollywood",
         id:16,
-       imgUrl:"https://m.media-amazon.com/images/M/MV5BMTU1NTUwMjQxN15BMl5BanBnXkFtZTgwOTQ2MjEyMDE@._V1_.jpg",
-       name:"THE SHAWSHANK REDDEMPTION" ,
-       review:"Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.",
-       rating:"IMDb rating:9.3/10",
-      date:"5th March 2023",
-      article:"AYE The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont and starring Tim Robbins and Morgan Freeman.Adapted from the Stephen King novella Rita Hayworth and Shawshank Redemption, the film tells the story of Andy Dufresne, a banker who spends 19 years in Shawshank State Prison for the murder of his wife and her lover despite his claims of innocence. During his time at the prison, he befriends a fellow inmate, Ellis Boyd Red Redding, and finds himself protected by the guards after the warden begins using him in his money laundering operation. Despite a lukewarm box office reception that barely recouped its budget, the film received multiple award nominations and favorable reviews from critics for its acting and realism. It has since enjoyed a remarkable life on cable television, VHS, DVD, and Blu-ray and is thought of as one of the greatest movies of all time. It was included in the American Film Institute's 100 Years...100 Movies 10th Anniversary Edition."
-
-},{
-
-    category:"hollywood",
-        id:17,
        imgUrl:"https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
        name:"THE GODFATHER" ,
        review:"The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.",
        rating:"IMDb rating:9.2/10",
       date:"5th March 2023",
       article:"During a backyard wedding reception for his daughter, Connie, and his new son-in-law, Carlo Rizzi, Don Vito Corleone, a Mafia boss known as the Godfather, conducts business in his office. With him are his oldest son, Sonny, and his adopted son and family lawyer, Tom Hagen. Several people come to Vito’s office to make requests, including Bonasera, an undertaker seeking revenge for a crime against his daughter, and Johnny Fontane, a Frank Sinatra-like singer and actor who wants Vito to help land him a part in a movie. As the wedding reception draws to a close, Vito dispatches Tom to Los Angeles to talk to Jack Woltz, the studio owner. Despite Tom’s prodding, Woltz refuses to give Fontane the part, so the Corleones make Woltz “an offer he can’t refuse.” The day after the meeting with Tom, Woltz wakes up in a blood-stained bed to discover the severed head of his prized horse under the covers at his feet"
+
+},
+{
+
+    category:"hollywood",
+        id:17,
+       imgUrl:"https://m.media-amazon.com/images/M/MV5BMTU1NTUwMjQxN15BMl5BanBnXkFtZTgwOTQ2MjEyMDE@._V1_.jpg",
+       name:"THE SHAWSHANK REDDEMPTION" ,
+       review:"Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.",
+       rating:"IMDb rating:9.3/10",
+      date:"5th March 2023",
+      article:"AYE The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont and starring Tim Robbins and Morgan Freeman.Adapted from the Stephen King novella Rita Hayworth and Shawshank Redemption, the film tells the story of Andy Dufresne, a banker who spends 19 years in Shawshank State Prison for the murder of his wife and her lover despite his claims of innocence. During his time at the prison, he befriends a fellow inmate, Ellis Boyd Red Redding, and finds himself protected by the guards after the warden begins using him in his money laundering operation. Despite a lukewarm box office reception that barely recouped its budget, the film received multiple award nominations and favorable reviews from critics for its acting and realism. It has since enjoyed a remarkable life on cable television, VHS, DVD, and Blu-ray and is thought of as one of the greatest movies of all time. It was included in the American Film Institute's 100 Years...100 Movies 10th Anniversary Edition."
 
 },
 {
@@ -207,34 +209,11 @@ function DataContextProvider(props){
       article:"While sleeping near a sycamore tree in the sacristy of an abandoned church, Santiago, a shepherd boy, has a recurring dream about a child who tells him that he will find a hidden treasure if he travels to the Egyptian pyramids. An old woman tells Santiago that this dream is prophetic and that he must follow its instructions. Santiago is uncertain, however, since he enjoys the life of a shepherd.Next Santiago meets a mysterious old man who seems able to read his mind. This man introduces himself as Melchizedek, or the King of Salem. He tells Santiago about good and bad omens and says that it is the shepherd boy's duty to pursue his Personal Legend. Melchizedek then gives Santiago two stones, Urim and Thummim, with which to interpret omens.Santiago wavers briefly before selling his flock and purchasing a ticket to Tangier, in northern Africa, to which he travels by boat. Shortly after he arrives there, a thief steals all of Santiago's money, so the shepherd boy decides to look for a way to make enough money to return home. He finds work in the shop of a crystal merchant, where Santiago makes improvements that reap considerable financial rewards.After eleven months of working in the shop, Santiago is unsure of how to proceed. Should he return to Andalusia a rich man and buy more sheep? Or should he cross the vast Sahara in pursuit of the hidden treasure of his dreams? He joins a caravan traveling to Egypt.Santiago meets an Englishman who wants to learn the secret of alchemy, or turning any metal into gold, from a famous alchemist who lives at an oasis on the way to the pyramids. While traveling, Santiago begins listening to the desert and discovering the Soul of the World. The caravan eventually reaches the oasis, and there Santiago meets an Arab girl named Fatima and falls in love with her instantly. The caravan leader gathers the travelers together and tells them that tribal warfare prevents them from continuing their journey."
 
 },
+
 {
 
     category:"books",
         id:20,
-       imgUrl:"https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1638425885i/16299.jpg" ,
-       name:"AND THEN THERE WERE NONE",
-       review:"First, there were ten—a curious assortment of strangers summoned as weekend guests to a little private island off the coast of Devon. Their host, an eccentric millionaire unknown to all of them, is nowhere to be found. All that the guests have in common is a wicked past they're unwilling to reveal—and a secret that will seal their fate. For each has been marked for murder. A famous nursery rhyme is framed and hung in every room of the mansion:",
-       rating:"Goodreads rating:4.28/5",
-      date:"5th March 2023",
-      article:"Eight people, all strangers to each other, are invited to Indian Island, off the English coast. Vera Claythorne, a former governess, thinks she has been hired as a secretary; Philip Lombard, an adventurer, and William Blore, an ex-detective, think they have been hired to look out for trouble over the weekend; Dr. Armstrong thinks he has been hired to look after the wife of the island's owner. Emily Brent, General Macarthur, Tony Marston, and Judge Wargrave think they are going to visit old friends.When they arrive on the island, the guests are greeted by Mr. and Mrs. Rogers, the butler and housekeeper, who report that the host, someone they call Mr. Owen, will not arrive until the next day. That evening, as all the guests gather in the drawing room after an excellent dinner, they hear a recorded voice accusing each of them of a specific murder committed in the past and never uncovered. They compare notes and realize that none of them, including the servants, knows “Mr. Owen,” which suggests that they were brought here according to someone,s strange plan."
-
-},
-{
-
-    category:"books",
-        id:21,
-       imgUrl:"https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg" ,
-       name:"TO KILL A MOCKING BIRD",
-       review:"The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it.To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.",
-       rating:"Goodreads rating:4.27/5",
-      date:"5th March 2023",
-      article:"To Kill a Mockingbird takes place in the fictional town of Maycomb, Alabama, during the Great Depression. The protagonist is Jean Louise (“Scout”) Finch, an intelligent though unconventional girl who ages from six to nine years old during the course of the novel. She is raised with her brother, Jeremy Atticus (“Jem”), by their widowed father, Atticus Finch. He is a prominent lawyer who encourages his children to be empathetic and just. He notably tells them that it is “a sin to kill a mockingbird,” alluding to the fact that the birds are innocent and harmless.When Tom Robinson, one of the town's Black residents, is falsely accused of raping Mayella Ewell, a white woman, Atticus agrees to defend him despite threats from the community. At one point he faces a mob intent on lynching his client but refuses to abandon him. Scout unwittingly diffuses the situation. Although Atticus presents a defense that gives a more plausible interpretation of the evidence—that Mayella was attacked by her father, Bob Ewell—Tom is convicted, and he is later killed while trying to escape custody. A character compares his death to “the senseless slaughter of songbirds,” paralleling Atticus's saying about the mockingbird.The children, meanwhile, play out their own miniaturized drama of prejudice and superstition as they become interested in Arthur (“Boo”) Radley, a reclusive neighbour who is a local legend. They have their own ideas about him and cannot resist the allure of trespassing on the Radley property. Their speculations thrive on the dehumanization perpetuated by their elders. Atticus, however, reprimands them and tries to encourage a more sensitive attitude. Boo makes his presence felt indirectly through a series of benevolent acts, finally intervening when Bob Ewell attacks Jem and Scout. Boo kills Ewell, but Heck Tate, the sheriff, believes it is better to say that Ewell's death occurred when he fell on his own knife, sparing the shy Boo from unwanted attention. Scout agrees, noting that to do otherwise would be “sort of like shootin'a mockingbird.”"
-
-},
-{
-
-    category:"books",
-        id:22,
        imgUrl:"https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1557343311i/10210.jpg" ,
        name:"JANE EYRE",
        review:"again when she arrives at Thornfield Hall, where she has been hired by the brooding, proud Edward Rochester to care for his ward Adèle. Jane finds herself drawn to his troubled yet kind spirit. She falls in love. ",
@@ -246,13 +225,38 @@ function DataContextProvider(props){
 {
 
     category:"books",
-        id:23,
+        id:21,
        imgUrl:"https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630487234i/24213.jpg" ,
        name:"ALICE'S ADVENTURE IN WONDERLAND",
        review:"When Alice sees a white rabbit take a watch out of its waistcoat pocket she decides to follow it, and a sequence of most unusual events is set in motion. This mini book contains the entire topsy-turvy stories of Alice's Adventures in Wonderland and Through the Looking-Glass, accompanied by practical notes and Martina Pelouso's memorable full-colour illustrations.",
        rating:"Goodreads rating:4.06/5",
       date:"5th March 2023",
       article:"Alice sits on a riverbank on a warm summer day, drowsily reading over her sister’s shoulder, when she catches sight of a White Rabbit in a waistcoat running by her. The White Rabbit pulls out a pocket watch, exclaims that he is late, and pops down a rabbit hole. Alice follows the White Rabbit down the hole and comes upon a great hallway lined with doors. She finds a small door that she opens using a key she discovers on a nearby table. Through the door, she sees a beautiful garden, and Alice begins to cry when she realizes she cannot fit through the door. She finds a bottle marked “DRINK ME” and downs the contents. She shrinks down to the right size to enter the door but cannot enter since she has left the key on the tabletop above her head. Alice discovers a cake marked “EAT ME” which causes her to grow to an inordinately large height. Still unable to enter the garden, Alice begins to cry again, and her giant tears form a pool at her feet. As she cries, Alice shrinks and falls into the pool of tears. The pool of tears becomes a sea, and as she treads water she meets a Mouse. The Mouse accompanies Alice to shore, where a number of animals stand gathered on a bank. After a “Caucus Race,” Alice scares the animals away with tales of her cat, Dinah, and finds herself alone again."
+
+},
+{
+
+    category:"books",
+        id:22,
+       imgUrl:"https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1638425885i/16299.jpg" ,
+       name:"AND THEN THERE WERE NONE",
+       review:"First, there were ten—a curious assortment of strangers summoned as weekend guests to a little private island off the coast of Devon. Their host, an eccentric millionaire unknown to all of them, is nowhere to be found. All that the guests have in common is a wicked past they're unwilling to reveal—and a secret that will seal their fate. For each has been marked for murder. A famous nursery rhyme is framed and hung in every room of the mansion:",
+       rating:"Goodreads rating:4.28/5",
+      date:"5th March 2023",
+      article:"Eight people, all strangers to each other, are invited to Indian Island, off the English coast. Vera Claythorne, a former governess, thinks she has been hired as a secretary; Philip Lombard, an adventurer, and William Blore, an ex-detective, think they have been hired to look out for trouble over the weekend; Dr. Armstrong thinks he has been hired to look after the wife of the island's owner. Emily Brent, General Macarthur, Tony Marston, and Judge Wargrave think they are going to visit old friends.When they arrive on the island, the guests are greeted by Mr. and Mrs. Rogers, the butler and housekeeper, who report that the host, someone they call Mr. Owen, will not arrive until the next day. That evening, as all the guests gather in the drawing room after an excellent dinner, they hear a recorded voice accusing each of them of a specific murder committed in the past and never uncovered. They compare notes and realize that none of them, including the servants, knows “Mr. Owen,” which suggests that they were brought here according to someone,s strange plan."
+
+},
+
+{
+
+    category:"books",
+        id:23,
+       imgUrl:"https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg" ,
+       name:"TO KILL A MOCKING BIRD",
+       review:"The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it.To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.",
+       rating:"Goodreads rating:4.27/5",
+      date:"5th March 2023",
+      article:"To Kill a Mockingbird takes place in the fictional town of Maycomb, Alabama, during the Great Depression. The protagonist is Jean Louise (“Scout”) Finch, an intelligent though unconventional girl who ages from six to nine years old during the course of the novel. She is raised with her brother, Jeremy Atticus (“Jem”), by their widowed father, Atticus Finch. He is a prominent lawyer who encourages his children to be empathetic and just. He notably tells them that it is “a sin to kill a mockingbird,” alluding to the fact that the birds are innocent and harmless.When Tom Robinson, one of the town's Black residents, is falsely accused of raping Mayella Ewell, a white woman, Atticus agrees to defend him despite threats from the community. At one point he faces a mob intent on lynching his client but refuses to abandon him. Scout unwittingly diffuses the situation. Although Atticus presents a defense that gives a more plausible interpretation of the evidence—that Mayella was attacked by her father, Bob Ewell—Tom is convicted, and he is later killed while trying to escape custody. A character compares his death to “the senseless slaughter of songbirds,” paralleling Atticus's saying about the mockingbird.The children, meanwhile, play out their own miniaturized drama of prejudice and superstition as they become interested in Arthur (“Boo”) Radley, a reclusive neighbour who is a local legend. They have their own ideas about him and cannot resist the allure of trespassing on the Radley property. Their speculations thrive on the dehumanization perpetuated by their elders. Atticus, however, reprimands them and tries to encourage a more sensitive attitude. Boo makes his presence felt indirectly through a series of benevolent acts, finally intervening when Bob Ewell attacks Jem and Scout. Boo kills Ewell, but Heck Tate, the sheriff, believes it is better to say that Ewell's death occurred when he fell on his own knife, sparing the shy Boo from unwanted attention. Scout agrees, noting that to do otherwise would be “sort of like shootin'a mockingbird.”"
 
 },
 {

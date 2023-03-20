@@ -41,11 +41,11 @@ height: 250px;
     display: flex;
     flex-direction: column;
 }
-.AdvertisementFood{
-    border: 1px solid black;
-    height: 1000px;
-    width: 300px;
-    text-align: center;
+.Advertisementbf{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREB_yx2efmISGuSwVLCw1iFZUGMbghtmVB09IV6qIiSCBaTDvh-Q7XU5PUJhlnBHk0FYU&usqp=CAU);
+    width: 200px;
+    height: 1500px;
+    background-size: contain;
 }
 .pageName{
     font-family: Arial, Helvetica, sans-serif;

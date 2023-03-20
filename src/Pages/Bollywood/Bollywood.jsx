@@ -45,17 +45,17 @@ export default function Bollywood() {
      <div className='topFlex'>
       <div>
       {
-      bollywood.filter((item)=>item.category === 'bollywood').map((movie)=>{
+      bollywood.filter((item)=>item.category === 'bollywood' && item.id<6).map((movie)=>{
         return(
           <>
-          <div className='topPostList'onClick={()=>toNavigate(movie.id,movie)}>
+          <div className='topPostListb'onClick={()=>toNavigate(movie.id,movie)}>
             <div>
-          <img src={movie.imgUrl} alt='moviePoster' className='image2'/>
+          <img src={movie.imgUrl} alt='moviePoster' className='image2b'/>
           </div>
           <div>
-          <h5>{movie.name}</h5>
-          <div>{movie.rating}</div>
-          <div>{movie.date}</div>
+          <h6 className='topimghead'>{movie.name}</h6>
+          <div className='rateb'>{movie.rating}</div>
+          <div className='dateb'>{movie.date}</div>
           <hr/>
           </div>
           </div>
@@ -64,8 +64,8 @@ export default function Bollywood() {
       })
     }
     </div>
-    <div className='Advertisement'>
-      Advertisement
+    <div className='Advertisementb'>
+      
     </div>
     </div>
       </div>

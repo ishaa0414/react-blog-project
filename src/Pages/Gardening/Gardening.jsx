@@ -47,14 +47,14 @@ export default function Gardening() {
       gardening.filter((item)=>item.category === 'gardening').map((gardening)=>{
         return(
           <>
-          <div className='topPostList'  onClick={()=>toNavigate(gardening.id,gardening)}>
+          <div className='topPostListb'  onClick={()=>toNavigate(gardening.id,gardening)}>
             <div>
-          <img src={gardening.imgUrl} alt='Plant' className='TopImage'/>
+          <img src={gardening.imgUrl} alt='Plant' className='image2bg'/>
           </div>
           <div>
-          <h5>{gardening.name}</h5>
-          <div>{gardening.rating}</div>
-          <div>{gardening.date}</div>
+          <h5 className='topimgheadg'>{gardening.name}</h5>
+          <div className='rateb'>{gardening.rating}</div>
+          <div className='dateb'>{gardening.date}</div>
           <hr/>
           </div>
           </div>
@@ -63,8 +63,8 @@ export default function Gardening() {
       })
     }
     </div>
-    <div className='Advertisement'>
-      Advertisement
+    <div className='Advertisementbg'>
+  
     </div>
     </div>
       </div>
