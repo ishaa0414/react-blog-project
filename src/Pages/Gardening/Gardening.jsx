@@ -1,14 +1,21 @@
-import React, { useContext } from 'react'
-import { DataContext } from '../../Context'
+import React from 'react'
+// import { DataContext } from '../../Context'
 import Header from '../../Header/Header'
 import './Gardening.css'
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useState } from 'react'
 export default function Gardening() {
-  const [gardening]=useContext(DataContext);
+  // const [gardening]=useContext(DataContext);
   const nav=useNavigate();
   const toNavigate=(id,selectedGarden)=>{
     nav(`/article/$(id)`,{state:{content:selectedGarden}});
   }
+  const[garden,setgarden]=useState([])
+  useEffect(()=>{
+    fetch("https://reactblogbackend-ysbt.onrender.com/gardening")
+ .then(res=>res.json())
+ .then((data)=>{setgarden(data)})})
   return (
     <>
     <Header />
@@ -16,7 +23,7 @@ export default function Gardening() {
     <div>
     <h2 className='pageName'>Gardening</h2>
     {
-      gardening.filter((item)=>item.category === 'gardening').map((gardening)=>{
+      garden.map((gardening)=>{
         return(
           <>
           <div className='BollywoodFlex' id={gardening.id}  onClick={()=>toNavigate(gardening.id,gardening)}>
@@ -44,7 +51,7 @@ export default function Gardening() {
      <div className='topFlex'>
       <div>
       {
-      gardening.filter((item)=>item.category === 'gardening').map((gardening)=>{
+      garden.filter((item)=>item.category === 'gardening').map((gardening)=>{
         return(
           <>
           <div className='topPostListb'  onClick={()=>toNavigate(gardening.id,gardening)}>

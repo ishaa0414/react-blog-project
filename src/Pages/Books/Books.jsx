@@ -1,14 +1,22 @@
-import React, { useContext } from 'react'
-import { DataContext } from '../../Context'
+import React from 'react'
+// import { DataContext } from '../../Context'
 import Header from '../../Header/Header'
 import './Books.css'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { useEffect } from 'react'
 export default function Books() {
-  const [books]=useContext(DataContext);
+  // const [booksC]=useContext(DataContext);
   const nav=useNavigate();
   const toNavigate=(id,selectedBook)=>{
     nav(`/article/$(id)`,{state:{content:selectedBook}});
   }
+  const[book,setbook]=useState([])
+  useEffect(()=>{
+      fetch("https://reactblogbackend-ysbt.onrender.com/book")
+   .then(res=>res.json())
+   .then((data)=>{setbook(data)})})
+  
   return (
     <>
     <Header />
@@ -16,7 +24,7 @@ export default function Books() {
     <div>
     <h2 className='pageName'>Books</h2>
     {
-      books.filter((item)=>item.category === 'books').map((books)=>{
+      book.map((books)=>{
         return(
           <>
           <div className='BollywoodFlex' id={books.id} onClick={()=>toNavigate(books.id,books)}>
@@ -44,7 +52,7 @@ export default function Books() {
      <div className='topFlex'>
       <div>
       {
-     books.filter((item)=>item.category === 'books' && item.id<21).map((books)=>{
+     book.filter((item)=>item.category === 'books' && item.id<21).map((books)=>{
         return(
           <>
           <div className='topPostListb' onClick={()=>toNavigate(books.id,books)}>

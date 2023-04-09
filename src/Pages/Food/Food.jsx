@@ -1,17 +1,24 @@
 
 import Header from '../../Header/Header'
-import React, { useContext } from 'react'
-import { DataContext } from '../../Context'
+import React from 'react'
+// import { DataContext } from '../../Context'
 import './Food.css'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 export default function Food() {
-  const [food]=useContext(DataContext);
+  // const [food]=useContext(DataContext);
 
   const nav=useNavigate();
   const toNavigate=(id,selectedFood)=>{
     nav(`/article/$(id)`,{state:{content:selectedFood}});
   }
+  const[food,setfood]=useState([])
+  useEffect(()=>{
+      fetch("http://localhost:5000/food")
+   .then(res=>res.json())
+   .then((data)=>{setfood(data)})})
   return (
     <>
  

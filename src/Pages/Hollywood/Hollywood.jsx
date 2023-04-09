@@ -1,14 +1,21 @@
 import "./Hollywood.css"
-import React, { useContext } from 'react'
-import { DataContext } from '../../Context'
+import React  from 'react'
+// import { DataContext } from '../../Context'
 import Header from '../../Header/Header'
 import { useNavigate } from "react-router-dom"
+import { useEffect } from "react"
+import { useState } from "react"
 export default function Hollywood() {
-  const [hollywood]=useContext(DataContext);
+  // const [hollywood]=useContext(DataContext);
   const nav=useNavigate();
   const toNavigate=(id,selectedMovieh)=>{
     nav(`/article/$(id)`,{state:{content:selectedMovieh}});
   }
+  const[hollywood,sethollywood]=useState([])
+  useEffect(()=>{
+      fetch("https://reactblogbackend-ysbt.onrender.com/hollywood")
+   .then(res=>res.json())
+   .then((data)=>{sethollywood(data)})})
   return (
     <>
     <Header />
@@ -16,7 +23,7 @@ export default function Hollywood() {
     <div>
     <h2 className='pageName'>Hollywood</h2>
     {
-      hollywood.filter((item)=>item.category === 'hollywood').map((movieh)=>{
+      hollywood.map((movieh)=>{
         return(
           <>
           <div className='BollywoodFlex' id={movieh.id} onClick={()=>toNavigate(movieh.id,movieh)}>

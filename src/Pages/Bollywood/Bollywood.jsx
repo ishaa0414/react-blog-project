@@ -1,15 +1,23 @@
-import React, { useContext } from 'react'
-import { DataContext } from '../../Context'
+import React from 'react'
+// import { DataContext } from '../../Context'
 import Header from '../../Header/Header'
 import './Bollywood.css'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 export default function Bollywood() {
-  const [bollywood]=useContext(DataContext);
+  // const [bollywood]=useContext(DataContext);
   const nav=useNavigate();
   const toNavigate=(id,selectedMovie)=>{
     nav(`/article/$(id)`,{state:{content:selectedMovie}});
   }
+  const[bollywoodmovie,setbollywood]=useState([])
+  useEffect(()=>{
+      fetch("https://reactblogbackend-ysbt.onrender.com/bollywood")
+   .then(res=>res.json())
+   .then((data)=>{setbollywood(data)})})
+  
   return (
     <>
     <Header />
@@ -17,7 +25,7 @@ export default function Bollywood() {
     <div>
     <h2 className='pageName'>Bollywood</h2>
     {
-      bollywood.filter((item)=>item.category === 'bollywood').map((movie)=>{
+      bollywoodmovie.map((movie)=>{
         return(
           <>
           <div className='BollywoodFlex' id={movie.id} onClick={()=>toNavigate(movie.id,movie)}>
@@ -45,7 +53,7 @@ export default function Bollywood() {
      <div className='topFlex'>
       <div>
       {
-      bollywood.filter((item)=>item.category === 'bollywood' && item.id<6).map((movie)=>{
+      bollywoodmovie.filter((item)=>item.category === 'bollywood').map((movie)=>{
         return(
           <>
           <div className='topPostListb'onClick={()=>toNavigate(movie.id,movie)}>
